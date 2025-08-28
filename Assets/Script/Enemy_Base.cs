@@ -34,6 +34,12 @@ public class Enemy_Base : MonoBehaviour
         max_health = health;
     }
 
+    public void FollowPlayer()
+    {
+        
+        //코드 작성 해주세요!
+    }
+
     protected void Start()
     {
         player = GameObject.Find("Player");
@@ -119,14 +125,7 @@ public class Enemy_Base : MonoBehaviour
 
     
 
-    public void FollowPlayer()
-    {
-        
-        if (Vector2.Distance(transform.position, player.transform.position) > stopDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
-        }
-    }
+    
 
     public void AttackSystem()
     {

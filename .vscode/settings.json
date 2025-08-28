@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "25SwFestival.sln"
+    "dotnet.defaultSolution": "ssf_practice.sln"
 }

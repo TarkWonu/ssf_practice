@@ -56,7 +56,7 @@ public class MobSpawn : MonoBehaviour
                 }
             }
 
-            Instantiate(monster, closest.position, Quaternion.identity);
+            //코드 작성 해주세요!
         }
     }
 }

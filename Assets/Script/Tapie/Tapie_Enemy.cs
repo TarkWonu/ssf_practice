@@ -8,8 +8,6 @@ public class Tapie_Enemy : Enemy_Base
     
     public override void Attack()
     {
-        GameObject bullet = Instantiate(bulletPrefeb, transform.position, transform.rotation);
-        Vector2 dir = player.transform.position - transform.position;
-        bullet.GetComponent<Rigidbody2D>().AddForce(dir.normalized * bulletSpeed, ForceMode2D.Impulse);
+        //코드 작성 해주세요!
     }
 }

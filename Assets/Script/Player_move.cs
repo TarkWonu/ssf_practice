@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player_move : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float speed;
+    //코드 작성 해주세요!
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -12,10 +12,6 @@ public class Player_move : MonoBehaviour
     void Update()
 
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-
-        rb.linearVelocity = 
-        new Vector2(x, y).normalized * speed;
+        //코드 작성 해주세요!
     }
 }

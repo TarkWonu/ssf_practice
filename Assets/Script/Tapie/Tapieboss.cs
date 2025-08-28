@@ -9,6 +9,33 @@ public class Tapieboss : Boss_base
     int bulletcount = 0;
     public float wait = 0, movespeed = 15f, walktime = 0;
     public GameObject bulletPrefab, meleePrefab, adPrefab;
+
+    void DoRangedAttack(Vector2 dir)
+    {
+        //코드 작성 해주세요!
+    }
+
+    void DoMeleeAttackOrChase(Vector2 dir)
+    {
+        if (Vector3.Distance(player.position, transform.position) < 2f)
+        {
+            //코드 작성 해주세요!
+        }
+        else
+        {
+            //코드 작성 해주세요!
+            anim.SetBool("Moving", true);
+            if (walktime > 0f)
+            {
+                walktime -= Time.deltaTime;
+            }
+            else { walktime = 0f; bulletcount = 0; currentaction = 0; anim.SetBool("Moving", false);}
+        }
+    }
+    void SummonAds()
+    {
+        //코드 작성 해주세요!
+    }
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -61,60 +88,7 @@ public class Tapieboss : Boss_base
         wait = Random.Range(0.5f, 2f);
     }
 
-    void DoRangedAttack(Vector2 dir)
-    {
-        if (bulletcount > 0)
-        {
-            GameObject instance = Instantiate(bulletPrefab, transform.position, Quaternion.FromToRotation(Vector3.right, dir));
-            Destroy(instance, 2f);
-            bulletcount--;
-            wait = 0.5f;
-        }
-        else
-        {
-            currentaction = 0;
-        }
-    }
+    
 
-    void DoMeleeAttackOrChase(Vector2 dir)
-    {
-        if (Vector3.Distance(player.position, transform.position) < 2f)
-        {
-            anim.SetBool("Moving", false);
-            if (bulletcount > 0)
-            {
-                GameObject instance = Instantiate(meleePrefab, transform.position, Quaternion.FromToRotation(Vector3.right, dir));
-                Destroy(instance, 0.15f);
-                bulletcount--;
-                wait = 0.5f;
-            }
-            if (bulletcount == 0)
-                currentaction = 0;
-        }
-        else
-        {
-            Vector2 direction = (player.position - transform.position).normalized;
-            rb.MovePosition(direction * movespeed + rb.position);
-            anim.SetBool("Moving", true);
-            if (walktime > 0f)
-            {
-                walktime -= Time.deltaTime;
-            }
-            else { walktime = 0f; bulletcount = 0; currentaction = 0; anim.SetBool("Moving", false);}
-        }
-    }
-
-    void SummonAds()
-    {
-        if (bulletcount > 0)
-        {
-            GameObject instance = Instantiate(adPrefab, new Vector3(Random.Range(-7f, 7f), Random.Range(-4f, 4f)), Quaternion.LookRotation(Vector3.forward));
-            bulletcount--;
-            wait = Random.Range(0.5f, 1f);
-        }
-        else
-        {
-            currentaction = 0;
-        }
-    }
+    
 }

@@ -14,19 +14,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        fireTimer -= Time.deltaTime;
-
-        if (Input.GetMouseButtonDown(0) && fireTimer <= 0f && ammo > 0)
-        {
-            Shoot();
-            ammo--;
-            fireTimer = fireCooldown;
-        }
-
-        if (Input.GetKeyDown(KeyCode.R)&&!reloading)
-        {
-            StartCoroutine(Reload());
-        }
+        //코드 작성 해주세요!
     }
 
     IEnumerator Reload()

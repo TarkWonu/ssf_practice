@@ -24,6 +24,17 @@ public class Para_boss : Boss_base
     private Vector3 previousPosition;
     private float currentSpeed;
 
+
+
+    void FireMissile()
+    {
+        //코드 작성 해주세요!
+    }
+
+    void SpawnMob()
+    {
+        //코드 작성 해주세요!
+    }
     void Start()
     {
         deathanimlength = 1.16f;
@@ -116,27 +127,9 @@ public class Para_boss : Boss_base
         }
     }
 
-    void SpawnMob()
-    {
-        int currentMobCount = GameObject.FindGameObjectsWithTag("Mob").Length;
-        if (currentMobCount >= 6) return;
+    
 
-        Vector2 offset = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
-        Instantiate(mobPrefab, (Vector2)transform.position + offset, Quaternion.identity);
-    }
-
-    void FireMissile()
-    {
-        if (player == null) return;
-
-        GameObject missileObj = Instantiate(missilePrefab, firePoint.position, firePoint.rotation);
-        HomingMissile missile = missileObj.GetComponent<HomingMissile>();
-
-        if (missile != null)
-        {
-            missile.target = player.transform;
-        }
-    }
+    
 }
 
 

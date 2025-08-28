@@ -21,7 +21,21 @@ public class AnA_Boss : Boss_base
     private Vector3 previousPosition;
     private float currentSpeed;
     [SerializeField] float attackcooltime;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    IEnumerator LaserRotate()
+    {
+        //코드 작성해주세요!(밑에 코드는 지워주세요!)
+        yield return null;
+    }
+    IEnumerator DrawBoom()
+        {
+
+            //코드 작성해주세요!(밑에 코드는 지워주세요!)
+            yield return null;
+            
+
+        }
+    
     void Start()
     {
         deathanimlength = 0.75f;
@@ -60,15 +74,7 @@ public class AnA_Boss : Boss_base
                     }
             }
         }
-        /* if (healcooltime >= 10f && boss_hp < boss_maxhp / 2)//보스 체력 1/2이하
-        {
-            healcooltime = 0;
-            SpawnServer();
-        }
-
-
-        Server_Heal();
-    */
+       
     }
     void FollowPlayer()
     {
@@ -97,77 +103,17 @@ public class AnA_Boss : Boss_base
             anim.SetFloat("Speed", currentSpeed);
         }
     }
+
+
+
+
+
+
+
+
+
+
     
-
-    IEnumerator LaserRotate()
-    {
-        attacking = true;
-        Laser.SetActive(true);
-        //float timeElapsed = 0f;
-        float currentRotation = 0f;
-
-        while (currentRotation < 360f)
-        {
-            float deltaRotation = (360f / laserRotateSpeed) * Time.deltaTime;
-            Laser.transform.Rotate(0f, 0f, deltaRotation);
-            currentRotation += deltaRotation;
-        
-            yield return null;
-        }
-
-
-        float correction = 360f - currentRotation;
-        Laser.transform.Rotate(0f, 0f, correction);
-        Laser.SetActive(false);
-        attacking = false;
-    }
-
-
-
-    void SpawnServer()
-    {
-        foreach (var s in Servers)
-        {
-            s.SetActive(true);
-        }
-    }
-
-
-    /* void Server_Heal()
-    {
-        server_enable = false;
-        foreach (var i in Servers)
-        {
-            if (i.activeSelf)
-            {
-                server_enable = true;
-            }
-        } 
-
-
-
-        if (server_enable)
-        {
-            healtimer += Time.deltaTime;
-            if (healtimer >= 1.5f)
-            {
-                boss_hp++;
-                healtimer = 0;
-            }
-        }
-    }*/
-
-    IEnumerator DrawBoom()
-    {
-        attacking = true;
-        for (int i = 0; i < 6; i++)
-        {
-            Instantiate(boom, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(0.5f);
-        }
-
-        attacking = false;
-    }
     
 
 

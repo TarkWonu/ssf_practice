@@ -7,7 +7,10 @@ public class AnA_Enemy : Enemy_Base
     // Update is called once per frame
 
     Animator anim;
-
+    public override void Attack()
+    {
+        //코드 작성 해주세요!
+    }
     void Start()
     {
         base.Start();
@@ -22,14 +25,5 @@ public class AnA_Enemy : Enemy_Base
         Destroy(gameObject);
     }
 
-    public override void Attack()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player == null) return;
-        if (Vector2.Distance(transform.position, player.transform.position) < 3)
-        {
-            anim.SetTrigger("Explode");
-            StartCoroutine(BoomAfterAnimation());
-        }
-    }
+    
 }

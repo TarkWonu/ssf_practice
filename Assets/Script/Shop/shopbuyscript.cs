@@ -7,33 +7,18 @@ public class shopbuyscript : MonoBehaviour
 
     public void HealthUpgrade()
     {
-        if (GameManager.instance.coin >= cost)
-        {
-            GameManager.instance.coin -= cost;
-            GameManager.instance.player_maxhp++;
-
-        }
-        Debug.Log("123");
+        //코드 작성 해주세요!
+        
     }
 
     public void AttackPowerUpgrade()
     {
-        if (GameManager.instance.coin >= cost)
-        {
-            GameManager.instance.coin -= cost;
-            GameManager.instance.bulletdamage++;
-
-        }
+        //코드 작성 해주세요!
     }
 
     public void maxammoUpgrade()
     {
-        if (GameManager.instance.coin >= cost)
-        {
-            GameManager.instance.coin -= cost;
-            GameManager.instance.maxammo++;
-
-        }
+        //코드 작성 해주세요!
     }
 
     public void MoveNextStage()
