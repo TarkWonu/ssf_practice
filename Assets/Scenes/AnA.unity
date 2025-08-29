@@ -1317,7 +1317,7 @@ GameObject:
   - component: {fileID: 838247281}
   - component: {fileID: 838247282}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2471,7 +2471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac16361324c80ee428dd5408640d7e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!61 &1619260468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2588,7 +2587,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -625278691
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 711951136900363153, guid: ec074cdb4ed655341bd65df1cf6f5a87, type: 3}
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_FlipX: 0
@@ -3239,10 +3238,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1570581578}
   - {fileID: 1310665816}
+  - {fileID: 1619260471}
   - {fileID: 468134}
   - {fileID: 838247280}
   - {fileID: 780374074}
   - {fileID: 1603567356}
   - {fileID: 1792880554}
-  - {fileID: 1619260471}
   - {fileID: 1036018256}

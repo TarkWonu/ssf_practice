@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 1316040301}
   - component: {fileID: 1316040302}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BossImgController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
