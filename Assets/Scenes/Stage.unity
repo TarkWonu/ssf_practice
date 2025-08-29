@@ -1120,7 +1120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 523680998}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Spawner 3
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1320,7 +1320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac16361324c80ee428dd5408640d7e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &545762174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,12 +1451,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574603553}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64.9, y: 1.31, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.7, y: 1.31, z: 0}
   m_LocalScale: {x: 6.56, y: 6.56, z: 6.56}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1143800367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118295233
 GameObject:
@@ -1758,6 +1757,7 @@ Transform:
   - {fileID: 1140001755}
   - {fileID: 1732795524}
   - {fileID: 1652405466}
+  - {fileID: 574603555}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531062213
@@ -1854,7 +1854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580296088}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spawner 1
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 1652405466}
   - component: {fileID: 1652405465}
   m_Layer: 0
-  m_Name: map2_0 (2)
+  m_Name: map2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2048,7 +2048,7 @@ GameObject:
   - component: {fileID: 1732795524}
   - component: {fileID: 1732795523}
   m_Layer: 0
-  m_Name: map2_0 (1)
+  m_Name: map2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2134,7 +2134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1740196486}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Spawner 2
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2166,7 +2166,7 @@ GameObject:
   - component: {fileID: 1776615683}
   - component: {fileID: 1776615684}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Heath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2685,7 +2685,6 @@ SceneRoots:
   - {fileID: 1950860281}
   - {fileID: 259552219}
   - {fileID: 226770420}
-  - {fileID: 574603555}
   - {fileID: 127504007}
   - {fileID: 1876292281}
   - {fileID: 324316061}

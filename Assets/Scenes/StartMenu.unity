@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 513351670}
   - component: {fileID: 513351671}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -584,7 +584,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518367475}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 513351671}
+        m_TargetAssemblyTypeName: GameStartCode, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &518367475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +978,6 @@ SceneRoots:
   - {fileID: 948250174}
   - {fileID: 731580745}
   - {fileID: 427498275}
-  - {fileID: 513351670}
   - {fileID: 970493752}
   - {fileID: 421100699}
+  - {fileID: 513351670}

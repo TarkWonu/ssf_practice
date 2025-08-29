@@ -8,7 +8,6 @@ public class shopbuyscript : MonoBehaviour
     public void HealthUpgrade()
     {
         //코드 작성 해주세요!
-        
     }
 
     public void AttackPowerUpgrade()

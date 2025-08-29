@@ -3,5 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class GameStartCode : MonoBehaviour
 {
-    //코드 작성 해주세요!
+    
+    public void StartGame()
+    {
+        //코드 작성 해주세요!
+    }
 }
