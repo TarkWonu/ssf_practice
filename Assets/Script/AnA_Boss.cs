@@ -22,10 +22,25 @@ public class AnA_Boss : Boss_base
     private float currentSpeed;
     [SerializeField] float attackcooltime;
 
-    IEnumerator LaserRotate()
+   IEnumerator LaserRotate()
     {
-        //코드 작성해주세요!(밑에 코드는 지워주세요!)
-        yield return null;
+        attacking = true;
+        Laser.SetActive(true);
+        //float timeElapsed = 0f;
+        float currentRotation = 0f;
+
+        while (currentRotation < 360f)
+        {
+            //코드 작성해 주세요!
+        
+            yield return null;
+        }
+
+
+        float correction = 360f - currentRotation;
+        Laser.transform.Rotate(0f, 0f, correction);
+        Laser.SetActive(false);
+        attacking = false;
     }
     IEnumerator DrawBoom()
         {
