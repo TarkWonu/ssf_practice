@@ -12,6 +12,7 @@ public class Boss_base : MonoBehaviour
     private bool isDead = false;
 
     protected Animator anim;
+    [SerializeField] GameObject barrier; 
 
     [SerializeField] GameObject Door;
     
@@ -52,6 +53,7 @@ public class Boss_base : MonoBehaviour
         if (boss_hp <= 0)
         {
             isDead = true;
+            barrier.SetActive(false);
             Door.SetActive(true);
             anim.SetTrigger("Dead");
             StartCoroutine(DieAfterAnimation());
