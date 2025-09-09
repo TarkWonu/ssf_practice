@@ -3,18 +3,16 @@ using UnityEngine.UI;
 using TMPro;
 public class StageUIController : MonoBehaviour
 {
-    Slider hp_bar;
-    TMP_Text bullettxt;
-    TMP_Text cointxt;
+    [SerializeField] Slider hp_bar;
+    [SerializeField] TMP_Text bullettxt;
+    [SerializeField] TMP_Text cointxt;
 
     PlayerAttack player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        hp_bar = GetComponentInChildren<Slider>();
-        bullettxt = GameObject.Find("Bullet").GetComponent<TMP_Text>();
-        cointxt = GameObject.Find("Coin").GetComponent<TMP_Text>();
+        
         player = GameObject.FindWithTag("Player").GetComponent<PlayerAttack>();
     }
 
