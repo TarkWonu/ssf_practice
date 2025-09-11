@@ -19,9 +19,10 @@ public class shopbuyscript : MonoBehaviour
     {
         //코드 작성 해주세요!
     }
-
+    #region 
     public void MoveNextStage()
     {
         FadeManager.Instance.LoadScene("beforestage");
     }
+    #endregion
 }

@@ -454,7 +454,7 @@ Transform:
   m_GameObject: {fileID: 132206169}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.376914, y: -0.065727234, z: -10}
+  m_LocalPosition: {x: -3.3756123, y: -0.065727234, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2428,6 +2428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aaa2ed01b5acb143a648cedda19626b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp_bar: {fileID: 1776615684}
+  bullettxt: {fileID: 254891344}
+  cointxt: {fileID: 1118295234}
 --- !u!114 &1876292278
 MonoBehaviour:
   m_ObjectHideFlags: 0

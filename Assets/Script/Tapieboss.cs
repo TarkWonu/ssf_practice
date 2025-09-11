@@ -29,13 +29,15 @@ public class Tapieboss : Boss_base
             {
                 walktime -= Time.deltaTime;
             }
-            else { walktime = 0f; bulletcount = 0; currentaction = 0; anim.SetBool("Moving", false);}
+            else { walktime = 0f; bulletcount = 0; currentaction = 0; anim.SetBool("Moving", false); }
         }
     }
     void SummonAds()
     {
         //코드 작성 해주세요!
     }
+
+    #region 
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -55,7 +57,7 @@ public class Tapieboss : Boss_base
         {
             wait = 0f;
             Vector2 dir = (player.position - transform.position).normalized;
-            anim.SetFloat("dirx",dir.x);
+            anim.SetFloat("dirx", dir.x);
             anim.SetFloat("diry", dir.y);
 
             switch (currentaction)
@@ -82,11 +84,12 @@ public class Tapieboss : Boss_base
         switch (currentaction)
         {
             case 1: bulletcount = Random.Range(3, 7); break;
-            case 2: walktime=2f; bulletcount = 3; break;
+            case 2: walktime = 2f; bulletcount = 3; break;
             case 3: bulletcount = Random.Range(4, 6); break;
         }
         wait = Random.Range(0.5f, 2f);
     }
+    #endregion
 
     
 

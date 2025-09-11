@@ -35,6 +35,7 @@ public class Para_boss : Boss_base
     {
         //코드 작성 해주세요!
     }
+    #region 
     void Start()
     {
         deathanimlength = 1.16f;
@@ -126,7 +127,7 @@ public class Para_boss : Boss_base
             anim.SetFloat("Speed", currentSpeed);
         }
     }
-
+    #endregion
     
 
     

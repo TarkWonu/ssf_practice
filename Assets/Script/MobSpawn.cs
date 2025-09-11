@@ -9,7 +9,7 @@ public class MobSpawn : MonoBehaviour
     GameObject monster;
     float t = 0;
     Transform player;
-
+    #region 
     void Start()
     {
         int index = (int)GameManager.instance.stage_level;
@@ -34,7 +34,7 @@ public class MobSpawn : MonoBehaviour
             spawnMob();
         }
     }
-
+    #endregion
     void spawnMob()
     {
         t += Time.deltaTime;

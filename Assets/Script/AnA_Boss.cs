@@ -50,7 +50,7 @@ public class AnA_Boss : Boss_base
             
 
         }
-    
+    #region 
     void Start()
     {
         deathanimlength = 0.75f;
@@ -118,7 +118,7 @@ public class AnA_Boss : Boss_base
             anim.SetFloat("Speed", currentSpeed);
         }
     }
-
+    #endregion
 
 
 

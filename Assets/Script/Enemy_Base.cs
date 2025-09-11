@@ -39,7 +39,7 @@ public class Enemy_Base : MonoBehaviour
         
         //코드 작성 해주세요!
     }
-
+    #region 
     protected void Start()
     {
         player = GameObject.Find("Player");
@@ -180,6 +180,6 @@ public class Enemy_Base : MonoBehaviour
         }
 
     }
-
+    #endregion
 
 }
