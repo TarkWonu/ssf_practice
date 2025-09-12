@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a50b843bcca30a469a09d5ea2b1139f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss_hp: 5
-  boss_maxhp: 5
+  boss_hp: 15
+  boss_maxhp: 15
   deathanimlength: 1.6
   barrier: {fileID: 10964001}
   Door: {fileID: 838247278}
