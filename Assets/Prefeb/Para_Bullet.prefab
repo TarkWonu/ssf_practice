@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  rotateSpeed: 200
+  rotateSpeed: 400
   lifetime: 10
   target: {fileID: 0}
 --- !u!50 &5127257769872358315
